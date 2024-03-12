@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{976905D3-244D-6087-DDC1-531F446FCFEC}</ProjectGuid>
+    <ProjectGuid>{61C7DC97-E550-2778-E345-A8AB99853FB6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,6 +59,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MouseLook.cs" />
     <Compile Include="Assets\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
