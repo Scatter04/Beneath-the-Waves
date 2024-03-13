@@ -9,18 +9,22 @@ public class MouseLook : MonoBehaviour
 
 
     private float xMousePos;
-    private float smoothedMousePos;
+    private float smoothedMousePosX;
+    private float yMousePos;
+    private float smoothedMousePosY;
 
-    private float rotationY = 0;
     public float lookSpeed = 2f;
     public float lookYLimit = 45f;
 
-    private float currentLookPos;
+    private float currentLookPosX;
+    private float currentLookPosY;
+    Quaternion originalRotation;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        originalRotation = transform.localRotation;
     }
 
     void Update()
@@ -32,23 +36,35 @@ public class MouseLook : MonoBehaviour
 
     void GetInput()
     {
-        rotationY += -Input.GetAxis("Mouse Y") * lookSpeed;
+        if (Input.GetKey(KeyCode.R))
+        {
+            transform.position = new Vector3(0, -0.5f);
+        }
+        else
+        {
+            transform.position = new Vector3(0, 0);
+        }
+        yMousePos = Input.GetAxisRaw("Mouse Y");
         xMousePos = Input.GetAxisRaw("Mouse X");
     }
 
     void ModifyInput()
     {
-        rotationY = Mathf.Clamp(rotationY, -lookYLimit, lookYLimit);
+        yMousePos *= sensitivity * smoothing;
+        smoothedMousePosY = Mathf.Lerp(smoothedMousePosY, yMousePos, 1f / smoothing);
         xMousePos *= sensitivity * smoothing;
-        smoothedMousePos = Mathf.Lerp(smoothedMousePos, xMousePos, 1f / smoothing);
+        smoothedMousePosX = Mathf.Lerp(smoothedMousePosX, xMousePos, 1f / smoothing);
     }
 
     void MovePlayer()
     {
-        currentLookPos += smoothedMousePos;
-        //transform.localRotation = Quaternion.Euler(rotationY, 0, 0);
-        //transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
-        //transform.rotation = Quaternion.AngleAxis(rotationY, transform.forward);
-        transform.localRotation = Quaternion.AngleAxis(currentLookPos, transform.up);
+        currentLookPosX += smoothedMousePosX;
+        currentLookPosY += smoothedMousePosY;
+        currentLookPosY = Mathf.Clamp(currentLookPosY, -lookYLimit, lookYLimit);
+        Quaternion yQuaternion = Quaternion.AngleAxis(currentLookPosY, Vector3.left);
+        Quaternion xQuaternion = Quaternion.AngleAxis(currentLookPosX, Vector3.up);
+
+        //Rotate
+        transform.localRotation = originalRotation * xQuaternion * yQuaternion;
     }
 }
