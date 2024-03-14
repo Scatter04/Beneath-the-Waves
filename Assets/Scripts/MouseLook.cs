@@ -36,7 +36,7 @@ public class MouseLook : MonoBehaviour
 
     void GetInput()
     {
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             transform.position = new Vector3(0, -0.5f);
         }

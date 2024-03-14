@@ -59,7 +59,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         // Crouching
-        if (Input.GetKey(KeyCode.R) && canMove)
+        if (Input.GetKey(KeyCode.LeftControl) && canMove)
         {
             myCC.height = crouchHeight;
             walkSpeed = crouchSpeed;
