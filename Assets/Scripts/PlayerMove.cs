@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
     private Vector3 movementVector;
     private float myGravity = 9.81f;
 
-    private bool canMove = true;
+    private bool isRunning;
 
     void Start()
     {
@@ -33,17 +33,37 @@ public class PlayerMove : MonoBehaviour
 
     void GetInput()
     {
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        Vector3 right = transform.TransformDirection(Vector3.right);
-        bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxisRaw("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxisRaw("Horizontal") : 0;
-        float movementDirectionY = movementVector.y;
+        isRunning = Input.GetKey(KeyCode.LeftShift) && myCC.isGrounded || isRunning && !myCC.isGrounded;
+        inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+        inputVector.Normalize();
+        inputVector = transform.TransformDirection(inputVector);
 
-        movementVector = (forward * curSpeedX) + (right * curSpeedY);
+        float movementDirectionY = movementVector.y;
+        if (myCC.isGrounded)
+        {
+            if (isRunning)
+            {
+                movementVector = (inputVector * runSpeed) + (Vector3.up * -myGravity);
+            }
+            else
+            {
+                movementVector = (inputVector * walkSpeed) + (Vector3.up * -myGravity);
+            }
+        }
+        else
+        {
+            if (isRunning)
+            {
+                movementVector = 0.6f * movementVector + 0.4f * (inputVector * runSpeed) + (Vector3.up * -myGravity);
+            }
+            else
+            {
+                movementVector = 0.6f * (inputVector * walkSpeed) + 0.4f * (Vector3.up * -myGravity);
+            }
+        }
 
         // Jumping
-        if (Input.GetButton("Jump") && canMove && myCC.isGrounded)
+        if (Input.GetButton("Jump") && myCC.isGrounded)
         {
             movementVector.y = jumpPower;
         }
@@ -59,7 +79,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         // Crouching
-        if (Input.GetKey(KeyCode.LeftControl) && canMove)
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             myCC.height = crouchHeight;
             walkSpeed = crouchSpeed;
