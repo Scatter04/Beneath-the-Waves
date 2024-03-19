@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
 
     private CharacterController myCC;
     public float walkSpeed = 6f;
-    public float runSpeed = 12f;
+    public float runSpeed = 9f;
     public float jumpPower = 3f;
 
     public float defaultHeight = 2f;
@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
 
     private Vector3 inputVector;
     private Vector3 movementVector;
-    private float myGravity = 9.81f;
+    private float myGravity = 15f;
 
     private bool isRunning;
 

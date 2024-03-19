@@ -8,12 +8,12 @@ public class Gun : MonoBehaviour
 
     private BoxCollider gunTrigger;
     public float range = 20f;
-    public float spread = 0.5f;
+    public float spread = 1f;
     public EnemyManager enemyManager;
 
     private float nextTimeToFire;
     public float fireRate;
-    public float damage = 0.5f;
+    public float damage = 1f;
 
     public LayerMask raycastLayerMask;
 
