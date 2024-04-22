@@ -10,10 +10,14 @@ public class Gun : MonoBehaviour
     public float range = 20f;
     public float spread = 1f;
     public EnemyManager enemyManager;
+    public ParticleSystem muzzleFlash;
+
 
     private float nextTimeToFire;
     public float fireRate;
     public float damage = 1f;
+
+    public Animator anims;
 
     public LayerMask raycastLayerMask;
 
@@ -30,13 +34,15 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && Time.time > nextTimeToFire)
         {
-
             Fire();
         }
     }
 
     void Fire()
     {
+        anims.ResetTrigger("Firing");
+        anims.SetTrigger("Firing");
+        muzzleFlash.Play();
         foreach (var enemy in enemyManager.enemiesInTrigger) 
         {
             var dir = enemy.transform.position - transform.position;
