@@ -11,7 +11,12 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private Sprite sprite;
 
+    [TextArea]
+    [SerializeField]
+    private string weaponDescription;
+
     private InventoryManager inventoryManager;
+    private bool destroyed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +25,11 @@ public class Weapon : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player" && destroyed == false)
         {
-            inventoryManager.AddWeapon(weaponName, sprite);
             Destroy(gameObject);
+            destroyed = true;
+            inventoryManager.AddWeapon(weaponName, sprite, weaponDescription);
         }
     }
 }

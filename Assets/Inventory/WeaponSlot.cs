@@ -13,6 +13,7 @@ public class WeaponSlot : MonoBehaviour, IPointerClickHandler
     public Sprite weaponSprite;
     public bool isFull;
     public Color color;
+    public string weaponDescription;
 
     //Weapon slot
     [SerializeField]
@@ -22,15 +23,21 @@ public class WeaponSlot : MonoBehaviour, IPointerClickHandler
     public bool thisWeaponSelected;
     private InventoryManager inventoryManager;
 
+    //weapon description
+    public Image itemDescriptionImage;
+    public TMP_Text ItemDescriptionName;
+    public TMP_Text ItemDescriptionText;
+
     public void Start()
     {
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
-    public void AddWeaponSlot(string weaponName, Sprite weaponSprite)
+    public void AddWeaponSlot(string weaponName, Sprite weaponSprite, string weaponDescription)
     {
         this.weaponName = weaponName;
         this.weaponSprite = weaponSprite;
+        this.weaponDescription = weaponDescription;
         isFull = true;
 
         weaponImage.sprite = weaponSprite;
@@ -52,5 +59,16 @@ public class WeaponSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager.DeselectAllSlots();
         selectedShader.SetActive(true);
         thisWeaponSelected = true;
+        ItemDescriptionName.text = weaponName;
+        ItemDescriptionText.text = weaponDescription;
+        itemDescriptionImage.sprite = weaponSprite;
+        if (itemDescriptionImage.sprite == null)
+        {
+            itemDescriptionImage.gameObject.SetActive(false);
+        }
+        else
+        {
+            itemDescriptionImage.gameObject.SetActive(true);
+        }
     }
 }

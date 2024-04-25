@@ -10,7 +10,13 @@ public class Key : MonoBehaviour
     [SerializeField]
     private Sprite sprite;
 
+    [TextArea]
+    [SerializeField]
+    private string keyDescription;
+
     private InventoryManager inventoryManager;
+
+    private bool destroyed = false; 
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +25,12 @@ public class Key : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && destroyed == false)
         {
-            inventoryManager.AddKey(keyName, sprite);
             Destroy(gameObject);
+            destroyed = true;
+            inventoryManager.AddKey(keyName, sprite, keyDescription);
+
         }
     }
 }

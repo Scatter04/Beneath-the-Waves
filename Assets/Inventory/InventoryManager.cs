@@ -8,7 +8,9 @@ public class InventoryManager : MonoBehaviour{
     private bool menuActivated;
 
     public WeaponSlot[] weaponSlot;
-    public keySlot[] keySlot; 
+    public keySlot[] keySlot;
+
+    public bool inventoryAccess = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,14 +21,15 @@ public class InventoryManager : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Inventory") && menuActivated)
+        if(Input.GetButtonDown("Inventory") && menuActivated && inventoryAccess)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             Inventory.SetActive(false);
             menuActivated = false;
+            DeselectAllSlots();
         }
-        else if (Input.GetButtonDown("Inventory") && !menuActivated)
+        else if (Input.GetButtonDown("Inventory") && !menuActivated && inventoryAccess)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -35,25 +38,25 @@ public class InventoryManager : MonoBehaviour{
         }
     }
 
-    public void AddWeapon(string weaponName, Sprite weaponSprite)
+    public void AddWeapon(string weaponName, Sprite weaponSprite, string weaponDescription)
     {
         for (int i = 0; i < weaponSlot.Length; i++)
         {
             if (!weaponSlot[i].isFull)
             {
-                weaponSlot[i].AddWeaponSlot(weaponName, weaponSprite);
+                weaponSlot[i].AddWeaponSlot(weaponName, weaponSprite, weaponDescription);
                 return;
             }
         }
     }
     
-    public void AddKey(string keyName, Sprite keySprite)
+    public void AddKey(string keyName, Sprite keySprite, string keyDescription)
     {
         for (int i = 0; i < keySlot.Length; i++)
         {
             if (!keySlot[i].isFull)
             {
-                keySlot[i].AddKeySlot(keyName, keySprite);
+                keySlot[i].AddKeySlot(keyName, keySprite, keyDescription);
                 return;
             }
         }

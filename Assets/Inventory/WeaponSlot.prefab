@@ -244,6 +244,10 @@ MonoBehaviour:
   weaponSprite: {fileID: 0}
   isFull: 0
   color: {r: 0, g: 0, b: 0, a: 0}
+  weaponDescription: 
   weaponImage: {fileID: 6320299382228492725}
   selectedShader: {fileID: 5835619315727385753}
   thisWeaponSelected: 0
+  itemDescriptionIamge: {fileID: 0}
+  ItemDescriptionName: {fileID: 0}
+  ItemDescriptionText: {fileID: 0}
