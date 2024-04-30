@@ -17,6 +17,15 @@ public class Weapon : MonoBehaviour
     public float bulletLife = 3f;
     public int weaponDamage;
 
+    //variables for gun animation
+
+    private BoxCollider gunTrigger;
+    public float range = 20f;
+    public float spread = 1f;
+
+    public ParticleSystem muzzleFlash;
+    public Animator anims;
+
     public void Awake()
     {
         readytoShoot = true;
@@ -25,7 +34,9 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gunTrigger = GetComponent<BoxCollider>();
+        gunTrigger.size = new Vector3(spread, spread, range);
+        gunTrigger.center = new Vector3(0, 0, 0.5f * range);
     }
 
     // Update is called once per frame
@@ -33,18 +44,21 @@ public class Weapon : MonoBehaviour
     {
         isShooting = Input.GetKeyDown(KeyCode.Mouse0);
 
-        if (readytoShoot && isShooting )
+        if (readytoShoot && isShooting)
         {
             FireWeapon();
         }
- 
+
     }
 
     private void FireWeapon()
     {
         readytoShoot = false;
+        anims.ResetTrigger("Firing");
+        anims.SetTrigger("Firing");
+        muzzleFlash.Play();
 
-        
+
         //Instantiate the bullet
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.identity);
 
