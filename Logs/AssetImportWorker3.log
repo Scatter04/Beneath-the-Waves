@@ -1,0 +1,426 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.21f1 (bf09ca542b87) revision 12519882'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16250 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2022.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/AUT/Y4/Group Project/Sprint1/Beneath-the-Waves
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+58887
+Successfully changed project path to: D:/AUT/Y4/Group Project/Sprint1/Beneath-the-Waves
+D:/AUT/Y4/Group Project/Sprint1/Beneath-the-Waves
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18984] Host "[IP] 192.168.80.128 [Port] 0 [Flags] 2 [Guid] 337258137 [EditorId] 337258137 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6DP8JKJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [18984] Host "[IP] 192.168.80.128 [Port] 0 [Flags] 2 [Guid] 337258137 [EditorId] 337258137 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6DP8JKJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 12.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.21f1 (bf09ca542b87)
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/AUT/Y4/Group Project/Sprint1/Beneath-the-Waves/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     4018 MB
+    Driver:   30.0.15.1169
+Initialize mono
+Mono path[0] = 'D:/Unity/2022.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006010 seconds.
+- Loaded All Assemblies, in  0.458 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.397 seconds
+Domain Reload Profiling: 856ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (207ms)
+		LoadAssemblies (133ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (204ms)
+			TypeCache.Refresh (203ms)
+				TypeCache.ScanAssembly (183ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (398ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (318ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (196ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.743 seconds
+Refreshing native plugins compatible for Editor in 2.80 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.732 seconds
+Domain Reload Profiling: 1476ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (445ms)
+		LoadAssemblies (347ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (216ms)
+			TypeCache.Refresh (192ms)
+				TypeCache.ScanAssembly (175ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (733ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (526ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (419ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (35ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 2.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3116 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.7 KB). Loaded Objects now: 3579.
+Memory consumption went from 125.4 MB to 125.4 MB.
+Total: 3.222100 ms (FindLiveObjects: 0.251500 ms CreateObjectMapping: 0.193500 ms MarkObjects: 2.670000 ms  DeleteObjects: 0.106100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1590910.476255 seconds.
+  path: Assets/LowPoly Fantasy Bags/Models/Bag.3.fbx
+  artifactKey: Guid(22e79eef6a17af847bbfd45f6db30f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Models/Bag.3.fbx using Guid(22e79eef6a17af847bbfd45f6db30f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713d0dc1690f3ffab47e65e8643ddbe7') in 0.237244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 13.264372 seconds.
+  path: Assets/LowPoly Fantasy Bags/Prefab/Bag.1_Red.prefab
+  artifactKey: Guid(7c175a2969477d3469aa562e3cbb01a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Prefab/Bag.1_Red.prefab using Guid(7c175a2969477d3469aa562e3cbb01a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f90625445739cb7bf1cdfe27c95a79f') in 0.003369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPoly Fantasy Bags/Prefab/Bag.2.prefab
+  artifactKey: Guid(d97f674796e33ba4abbd5f3810f36fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Prefab/Bag.2.prefab using Guid(d97f674796e33ba4abbd5f3810f36fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f931883de54dd21b6abde78bfa965200') in 0.003340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPoly Fantasy Bags/Prefab/Bag.2_Green.prefab
+  artifactKey: Guid(f0d6263bcfad8ad4888fe6db6253138c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Prefab/Bag.2_Green.prefab using Guid(f0d6263bcfad8ad4888fe6db6253138c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662501cb6dc07794d0e93c037a1e7453') in 0.003395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 12.842014 seconds.
+  path: Assets/LowPoly Fantasy Bags/Materials/Bag.1_Red.mat
+  artifactKey: Guid(450d053ed72d3b64d86c0a2966b7e3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Materials/Bag.1_Red.mat using Guid(450d053ed72d3b64d86c0a2966b7e3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0d8ba22bb20644a406a4639181b33d') in 0.076541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPoly Fantasy Bags/Materials/Bag.2_Red.mat
+  artifactKey: Guid(e70affc92d949d141911df78db509691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Materials/Bag.2_Red.mat using Guid(e70affc92d949d141911df78db509691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b4cc927ef526980d67aea94f8ca1ee') in 0.016861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/LowPoly Fantasy Bags/Materials/Bag.5.mat
+  artifactKey: Guid(41056f15297b56641b4e3c7911b15003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Materials/Bag.5.mat using Guid(41056f15297b56641b4e3c7911b15003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbaf4f7c6632f235bc25ae7fc99daf8f') in 0.020943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPoly Fantasy Bags/Materials/Bag.4.mat
+  artifactKey: Guid(5f3c7732d8bdda4428793eddd3da5748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Materials/Bag.4.mat using Guid(5f3c7732d8bdda4428793eddd3da5748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b1778bde6d44eaeb6f0c2245449538') in 0.018216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 29.987053 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/512x512/Bag.1_Red_BaseColor_512.png
+  artifactKey: Guid(cf6a480b3196731488df03af67497947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/512x512/Bag.1_Red_BaseColor_512.png using Guid(cf6a480b3196731488df03af67497947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41504c47bf4805fb31695722bd07c4ed') in 0.028967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/512x512/Bag.3_Bloody_BaseColor_512.png
+  artifactKey: Guid(4f0716d9375113b418a49609e2945370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/512x512/Bag.3_Bloody_BaseColor_512.png using Guid(4f0716d9375113b418a49609e2945370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f347cc82646d42e2cec087b7616368c') in 0.013338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/512x512/Bag.2_Red_BaseColor_512.png
+  artifactKey: Guid(99af51ec407d388439fb4853627bce5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/512x512/Bag.2_Red_BaseColor_512.png using Guid(99af51ec407d388439fb4853627bce5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '829b9f36532cf8564530db7fccb5e8e6') in 0.013825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.507862 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Red_BaseColor_1024.png
+  artifactKey: Guid(2a4b9882ded3f444e9d69c0b88d75ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Red_BaseColor_1024.png using Guid(2a4b9882ded3f444e9d69c0b88d75ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44374e0484140fae94b9cd6f8c765c7d') in 0.014627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.3_Bloody_BaseColor_1024.png
+  artifactKey: Guid(0a7e53e37c75cb14b8520c41d8ebdc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.3_Bloody_BaseColor_1024.png using Guid(0a7e53e37c75cb14b8520c41d8ebdc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c30686a40fb94d5618a410fd5187b1') in 0.013860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_Red_BaseColor_1024.png
+  artifactKey: Guid(f0623e9255cda324cb657eabe5dfcaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_Red_BaseColor_1024.png using Guid(f0623e9255cda324cb657eabe5dfcaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611f3b254bb20ed3a9750482032b5ea7') in 0.014988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.4_BaseColor_1024.png
+  artifactKey: Guid(73b2ce75cd38afc42b9806d16724defb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.4_BaseColor_1024.png using Guid(73b2ce75cd38afc42b9806d16724defb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf9ba7bbe218b207e40dcfd677c6fa7') in 0.013044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.294102 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Red_BaseColor_1024 1.png
+  artifactKey: Guid(031fa3d2c320dfb4b9f96fb049b49b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Red_BaseColor_1024 1.png using Guid(031fa3d2c320dfb4b9f96fb049b49b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f809ced7f5362fdc649cea8ddd70550') in 0.028098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_Red_BaseColor_1024 1.png
+  artifactKey: Guid(c4933708fe5d1594c973d3cd14aa4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_Red_BaseColor_1024 1.png using Guid(c4933708fe5d1594c973d3cd14aa4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6abb985a7ddea72cc8ffe7c3d568d8ec') in 0.011432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.297030 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Green_BaseColor_1024 2.png
+  artifactKey: Guid(f5c2e5d03c820824c9281477b0ef65aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Green_BaseColor_1024 2.png using Guid(f5c2e5d03c820824c9281477b0ef65aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a889b2820af3ee56c7775caa7081d56c') in 0.139482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_BaseColor_1024 2.png
+  artifactKey: Guid(a9749009a04c5d645a955113288ef30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_BaseColor_1024 2.png using Guid(a9749009a04c5d645a955113288ef30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfdc15f27260215d59fd000e05ece5e') in 0.016531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_Green_BaseColor_1024 2.png
+  artifactKey: Guid(9fafc2282eb97b54dbfbdf7d54b1acd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.2_Green_BaseColor_1024 2.png using Guid(9fafc2282eb97b54dbfbdf7d54b1acd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f8b96149c1d6ab670f73532de7d1a5') in 0.024015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Red_BaseColor_1024 3.png
+  artifactKey: Guid(4cf473b06b46d1347b9409310fcce473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.1_Red_BaseColor_1024 3.png using Guid(4cf473b06b46d1347b9409310fcce473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c9b9689041bf44d80be6c0adedb986') in 0.016704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 16.466557 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.5_Green_BaseColor_1024 5.png
+  artifactKey: Guid(8f861b299cb55294d8c905daacdfb326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.5_Green_BaseColor_1024 5.png using Guid(8f861b299cb55294d8c905daacdfb326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d48761dc16f83111f64ddf48793582') in 0.032534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.464068 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.5_Green_BaseColor_1024 7.png
+  artifactKey: Guid(a79fc1bdc0023624dbb60a53827d5748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.5_Green_BaseColor_1024 7.png using Guid(a79fc1bdc0023624dbb60a53827d5748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4aff1a50c903d74b470d1d10b90394') in 0.125480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.5_Green_BaseColor_1024 9.png
+  artifactKey: Guid(0c819f5fae2693240b344ca67d5420db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/1024x1024/Bag.5_Green_BaseColor_1024 9.png using Guid(0c819f5fae2693240b344ca67d5420db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ccf2a7a2c427a607b78e777b8b0a60') in 0.013584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.617279 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.2_BaseColor_2048.png
+  artifactKey: Guid(ecaa742a9d566334fb979c098af194bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.2_BaseColor_2048.png using Guid(ecaa742a9d566334fb979c098af194bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a72b0d81ec2daf46432433a6519647') in 0.019539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.3_BaseColor_2048.png
+  artifactKey: Guid(f6f84a06b4a8f1649a151f926ad85c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.3_BaseColor_2048.png using Guid(f6f84a06b4a8f1649a151f926ad85c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0300fce2eb95853adf196ded2be2b88a') in 0.019469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.2_Red_BaseColor_2048.png
+  artifactKey: Guid(dd29a73ec3f2767428dd9cd0d360c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.2_Red_BaseColor_2048.png using Guid(dd29a73ec3f2767428dd9cd0d360c14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd280a4eb2c8ce469acf87a278f837e23') in 0.016206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.5_BaseColor_2048.png
+  artifactKey: Guid(0654e81d8ac81f64abe2351cf0e862b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.5_BaseColor_2048.png using Guid(0654e81d8ac81f64abe2351cf0e862b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd364a363551ba47cb8f100613cf2a8a8') in 0.012769 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.711224 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.1_Red_BaseColor_2048 1.png
+  artifactKey: Guid(23f0f5358175f264f8d6877dc35b8391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.1_Red_BaseColor_2048 1.png using Guid(23f0f5358175f264f8d6877dc35b8391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa7c84cc83b71853826e9697e38aee0') in 0.015477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.2_BaseColor_2048 1.png
+  artifactKey: Guid(31e401f1231f4684c9937b1f9a81c8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPoly Fantasy Bags/Textures/2048x2048/Bag.2_BaseColor_2048 1.png using Guid(31e401f1231f4684c9937b1f9a81c8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02dc9966114be60dbcca104ea8ea8fe') in 0.013199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

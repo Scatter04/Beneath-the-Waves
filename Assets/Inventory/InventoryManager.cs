@@ -28,6 +28,7 @@ public class InventoryManager : MonoBehaviour{
             Inventory.SetActive(false);
             menuActivated = false;
             DeselectAllSlots();
+            weaponSlot[0].DeselectDescription();
         }
         else if (Input.GetButtonDown("Inventory") && !menuActivated && inventoryAccess)
         {

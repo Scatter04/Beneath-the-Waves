@@ -42,7 +42,7 @@ public class WeaponSlot : MonoBehaviour, IPointerClickHandler
 
         weaponImage.sprite = weaponSprite;
         color = weaponImage.color;
-        color.a = 255;
+        color.a = 100;
         weaponImage.color = color;
     }
 
@@ -70,5 +70,12 @@ public class WeaponSlot : MonoBehaviour, IPointerClickHandler
         {
             itemDescriptionImage.gameObject.SetActive(true);
         }
+    }
+
+    public void DeselectDescription()
+    {
+        ItemDescriptionName.text = null;
+        ItemDescriptionText.text = null;
+        itemDescriptionImage.gameObject.SetActive(false);
     }
 }
