@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public int value = 1;  
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered with: " + other.gameObject.name);
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            PlayerAccount.AddCoin();
+            PlayerAccount.AddCoin(value);  
             Destroy(gameObject);
         }
     }
