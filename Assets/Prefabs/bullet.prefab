@@ -66,9 +66,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 28bd9ec7b96d8b049b8bb5ec07a7d722, type: 3}
       insertIndex: -1
       addedObject: {fileID: -374634369013352064}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 28bd9ec7b96d8b049b8bb5ec07a7d722, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -5006209068708329612}
   m_SourcePrefab: {fileID: 100100000, guid: 28bd9ec7b96d8b049b8bb5ec07a7d722, type: 3}
 --- !u!1 &1769685936296941424 stripped
 GameObject:
@@ -110,18 +107,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f1a0e3bb4ae054e88cf14ae6673f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-5006209068708329612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769685936296941424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f595e0fbbff244dab4291d99b0b7b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  numberOfBullets: 5
-  spawnArea: {x: 0, y: 0, z: 0}
