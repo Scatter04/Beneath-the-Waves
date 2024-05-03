@@ -26,6 +26,7 @@ public class Weapon : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public Animator anims;
 
+
     public void Awake()
     {
         readytoShoot = true;
