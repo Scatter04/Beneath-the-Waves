@@ -62,8 +62,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Inventory\keySlot.cs" />
     <Compile Include="Assets\Inventory\Backpack.cs" />
+=======
+    <Compile Include="Assets\MedKit.cs" />
+>>>>>>> main
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Inventory\Weapon.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
