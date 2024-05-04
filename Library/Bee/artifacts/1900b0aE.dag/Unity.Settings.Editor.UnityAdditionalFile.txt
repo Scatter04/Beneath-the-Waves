@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+D:\AUT\Y4\Group Project\Sprint1\Beneath-the-Waves
+=======
 D:\AUT\Y4\Group Project\clone\Beneath-the-Waves
+>>>>>>> main
